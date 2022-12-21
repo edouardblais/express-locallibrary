@@ -16,7 +16,7 @@ app.use(helmet());
 
 // Set up mongoose connection
 const mongoose = require("mongoose");
-const mongoDB = "mongodb+srv://edouardblais:sk84life@cluster0.6xr0ecv.mongodb.net/local_library?retryWrites=true&w=majority";
+const mongoDB = "REMOVED";
 mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection;
 db.on("error", console.error.bind(console, "MongoDB connection error:"));
